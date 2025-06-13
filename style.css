@@ -1,0 +1,79 @@
+/* Resetando o estilo padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    gap: 20px;
+}
+
+.campo, .cidade {
+    width: 45%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+    background-color: #98FB98; /* Verde claro, representando o campo */
+}
+
+.cidade {
+    background-color: #87CEEB; /* Azul claro, representando a cidade */
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .campo, .cidade {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
